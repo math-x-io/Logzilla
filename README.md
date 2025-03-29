@@ -1,6 +1,6 @@
 # Logzilla
 
-[](img/logo.png)
+![](img/logo.png)
 
 Logzilla is an open-source log analysis tool designed for security teams and system administrators. It leverages a structured approach to analyze log data and generate detailed Markdown reports using the Ollama API for report generation.
 
