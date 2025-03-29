@@ -1,0 +1,19 @@
+Mar 29 15:45:12 server sshd[1234]: Failed password for root from 192.168.1.100 port 51432 ssh2
+Mar 29 15:45:15 server sshd[1234]: Failed password for root from 192.168.1.100 port 51432 ssh2
+Mar 29 15:45:18 server sshd[1234]: Failed password for root from 192.168.1.100 port 51432 ssh2
+Mar 29 15:45:21 server sshd[1234]: Accepted password for root from 192.168.1.100 port 51432 ssh2
+Mar 29 15:45:21 server sshd[1234]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Mar 29 15:45:25 server bash[1235]: User root executed: whoami
+Mar 29 15:45:26 server bash[1235]: User root executed: uname -a
+Mar 29 15:45:28 server bash[1235]: User root executed: id
+Mar 29 15:46:10 server bash[1235]: User root executed: cat /etc/shadow
+Mar 29 15:46:15 server bash[1235]: User root executed: sudo -l
+Mar 29 15:46:20 server bash[1235]: User root executed: exploit-privesc-binary
+Mar 29 15:46:45 server kernel: [  129.876543] Buffer overflow attempt detected in process exploit-privesc-binary by user root
+Mar 29 15:46:50 server bash[1235]: User root executed: python3 -c 'import pty;pty.spawn("/bin/bash")'
+Mar 29 15:47:00 server bash[1235]: User root executed: whoami
+Mar 29 15:47:01 server bash[1235]: User root is now root
+Mar 29 15:47:05 server bash[1235]: User root executed: echo "exploitation successful" > /tmp/exploit.log
+Mar 29 15:47:15 server bash[1235]: User root executed: rm -rf /var/log/*
+Mar 29 15:48:00 server sshd[1234]: pam_unix(sshd:session): session closed for user root
+Mar 29 15:48:00 server sshd[1234]: Disconnected from user root 192.168.1.100 port 51432

